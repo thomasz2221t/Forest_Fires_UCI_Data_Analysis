@@ -1,4 +1,4 @@
-foresty <- read.csv(file = 'forestfires.csv')
+makeScatterPlotMatrix2d <- function(foresty){
 
 jan =0; feb=0; mar=0; apr=0; may=0; jun=0; jul=0; aug=0; sep=0; oct=0; nov=0; dec=0;
 for(i in foresty$month){
@@ -39,3 +39,5 @@ pairs(~rain+temp+wind+area, data=foresty,
 pairs(~rain+temp+wind, data=foresty,
       labels=c("Deszcz", "Temperatura","Wiatr"),
       main="Wykres scatterplot matrix zestawienie: Pogodowe", panel=panel.smooth, col=my_cols)
+    
+}
