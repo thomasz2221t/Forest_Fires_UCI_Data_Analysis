@@ -1,5 +1,6 @@
-foresty <- read.csv(file = 'forestfires.csv')
-
+makeDenisty <- function(foresty)
+{
+ 
 #Wykres gestosci dla dni tygodnia
 Poniedzialek <- 0 
 Wtorek <- 0 
@@ -106,5 +107,5 @@ polygon(gestosc, col = "violetred")
 gestosc <- density(foresty$RH)
 plot(gestosc, frame = TRUE, col = "blue", main = "Wykres gestosci wilgotnosci wzglednej",sub ="procentowo: 15% - 100%")
 polygon(gestosc, col = "blue")
-
+}
 
