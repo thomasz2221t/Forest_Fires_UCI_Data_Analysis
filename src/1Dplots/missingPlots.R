@@ -2,11 +2,10 @@ library(mlbench)
 library(tidyverse)
 library(Amelia)
 
-foresty <- read.csv(file = 'forestfires.csv')
-forestyblad <-read.csv(file = 'forestfireskopia.csv')
-
-foresty$month <- recode(foresty$month, "jan"=1, "feb"=2, "mar"=2, "apr"=4,"may"=5, "jun"=6, "jul"=7, "aug"=8,"sep"=9, "oct"=10, "nov"=11, "dec"=12)
-foresty$day <- recode(foresty$day, "mon"=1, "tue"=2, "wed"=2, "thu"=4,"fri"=5, "sat"=6, "sun"=7)
+makeMissingPlotsAndBoxAndWhiskerPlots <-function(foresty)
+{
+  
+forestyblad <-read.csv(file = 'data/forestfireskopia.csv')
 
 # Create separate boxplots for each attribute
 #Months and days
@@ -33,3 +32,4 @@ missmap(forestyblad, col=c("black", "grey"), legend=FALSE,main = "Brakujce warto
 
 #Missing plot original csv file
 missmap(foresty, col=c("black", "grey"), legend=FALSE,main = "Brakujce wartosci")
+}
