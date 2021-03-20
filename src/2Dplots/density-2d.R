@@ -1,7 +1,7 @@
 library(ggplot2)
 library(tidyverse)
 
-foresty <- read.csv(file = 'forestfires.csv')
+makeDensity2d <- function(foresty){
 
 #zmienienie formatu z stringa na calkowite dla miesiacy i dni
 foresty$month <- recode(foresty$month, "jan"=1, "feb"=2, "mar"=2, "apr"=4,"may"=5, "jun"=6, "jul"=7, "aug"=8,"sep"=9, "oct"=10, "nov"=11, "dec"=12)
@@ -36,3 +36,5 @@ ggplot(foresty, aes(x=RH, y=temp) ) +
   stat_density_2d(aes(fill = ..level..), geom = "polygon", colour="white")+
   ggtitle("Wykres gestosci wilgotnosci wzglednej wzgledem temperatury")+
   labs(x="wilgotnosc wzgledna",y="temperatura")
+  
+}
