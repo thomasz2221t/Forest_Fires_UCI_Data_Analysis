@@ -31,7 +31,7 @@ korelacja2 <- cor(mac, use = "everything", method = "pearson")
 corrplot(korelacja2, method = c("number"), type = "upper", add = FALSE, col = c ("darkgoldenrod1","darkorchid1"), 
          bg = "aquamarine", title = "Macierz korelacji temperatury i wilgotnosci", is.corr = FALSE,
          order = "hclust")
-
+#W mac 2 wilgotnosc zamiast wilgoc zeby dzialalo
 mac2 <- matrix(wilgoc, wiatr)
 korelacja3 <- cor(mac2, use = "everything", method ="pearson")
 
