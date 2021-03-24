@@ -1,10 +1,13 @@
-makeDenisty <- function(foresty)
+makeDensity <- function(foresty)
 {
  
 #Wykres gestosci dla dni
+  
+png(filename= "plotsImages/myplot.png")
 gestosc <- density(foresty$day)
 plot(gestosc, frame = TRUE, col = "steelblue", main = "Gestosc pozarow dla dni tygodnia", sub="N = dni tygodnia")
 polygon(gestosc, col = "steelblue", bor = "black")
+dev.off()
 
 #Wykres gestosci dla miesiecy
 gestosc <- density( foresty$month)

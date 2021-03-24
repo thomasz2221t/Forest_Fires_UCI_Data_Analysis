@@ -9,10 +9,12 @@ forestyblad <-read.csv(file = 'data/forestfireskopia.csv')
 
 # Create separate boxplots for each attribute
 #Months and days
+png(filename= "plotsImages/myplot1.png")
 par(mfrow=c(1,6),mfcol=c(1,2))
 for(i in 3:4) {
   boxplot(foresty[,i], main=names(foresty)[i])
 }
+dev.off()
 
 #FFMC, DMC, DC and ISI
 par(mfrow=c(1,6))
