@@ -1,6 +1,6 @@
 library(corrplot)
 
-dane <- read.csv("forestfireskopia.csv")
+correlationPlot<-function(dane){
 
 #FFMC - rain relative humidity temperatur wind wplywa 
 #na zaplon i rozpsrzestrzenianie sie ognia
@@ -60,3 +60,4 @@ korelacja6 <- cor(mac5, use = "everything", method = "pearson")
 corrplot(korelacja6, method = c("number"), type = "upper", add = FALSE, col = c ("darkorange","seagreen"), 
          bg = "ivory", title = "Macierz korelacji temperatury i obszaru", is.corr = FALSE, order = "original")
 
+}
