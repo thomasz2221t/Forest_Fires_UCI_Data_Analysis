@@ -1,5 +1,4 @@
-dane <- read.csv("forestfires.csv")
-#(dane)
+boxAndWhisker <- function(dane){
 
 #FFMC - rain relative humidity temperatur wind wplywa 
 #na zaplon i rozpsrzestrzenianie sie ognia
@@ -19,7 +18,7 @@ temp_deszcz <- c(dane$DC)
 temp_wilgoc_deszcz <-c(dane$DMC)
 param_ffmc <- c(dane$FFMC)
 
-#porównanie rozrzutu szybkosci rozprzestrzeniania sie ognia
+#porÃ³wnanie rozrzutu szybkosci rozprzestrzeniania sie ognia
 boxplot(szybkosc, data= dane, xlab = "Szybkosc rozprzestrzeniania sie ognia",
         main = "Porownanie rozrzutu szybkosci rozprzestrzeniania sie ognia", horizontal=TRUE,col="blue",
         border = "grey25",range = TRUE, outline = TRUE)
@@ -104,9 +103,5 @@ boxplot(param_ffmc ~ temp_wilgoc_deszcz, data= dane, xlab = "Parametr FFMC - Fin
         horizontal=TRUE,col="bisque1",
         border = "gray1")
 
-
-
-
-
-
+}
 
