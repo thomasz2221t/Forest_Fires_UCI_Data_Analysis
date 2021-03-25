@@ -32,11 +32,13 @@ for(i in 9:13) {
 }
 dev.off()
 
-png(filename= "plotsImages/missingplots1.png") #dwa missing plots obok siebie
+png(filename= "plotsImages/missingplots1.png")
 #Missing plot incorrect values in csv file
 missmap(forestyblad, col=c("black", "grey"), legend=FALSE,main = "Brakujce wartosci (celowe bledy)")
+dev.off()
 
 #Missing plot original csv file
+png(filename= "plotsImages/missingplots2.png")
 missmap(foresty, col=c("black", "grey"), legend=FALSE,main = "Brakujce wartosci")
+#dev.off()
 }
-dev.off()

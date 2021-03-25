@@ -62,6 +62,6 @@ png(filename= "plotsImages/densityplot9.png")
 gestosc <- density(foresty$RH)
 plot(gestosc, frame = TRUE, col = "blue", main = "Wykres gestosci wilgotnosci wzglednej",sub ="procentowo: 15% - 100%")
 polygon(gestosc, col = "blue")
-dev.off()
+#dev.off()
 }
 
