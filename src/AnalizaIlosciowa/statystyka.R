@@ -40,7 +40,7 @@ statistic <- function(foresty){
   skewness(foresty$rain)
   skewness(foresty$area)
   
-  kurtosis(forestya$X)
+  kurtosis(foresty$X)
   kurtosis(foresty$Y)
   kurtosis(foresty$FFMC)
   kurtosis(foresty$DMC)
