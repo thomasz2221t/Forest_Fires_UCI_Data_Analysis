@@ -19,7 +19,7 @@ makeQQPlot <- function(foresty){
     labs(title = "Wilgotnosc materialow palnych",
          x = "Teoretyczna",
          y = "Wilgotnosc")
-  ggsave("plotsImages/QQPlot-1.png")
+  ggsave("plotsImages/QQPlot-1.png", width = 9, height = 6, units = "in")
   
   #kolorowy
   qplot_wmp1 <- ggplot(foresty, aes(sample = DMC, color = month)) + 
@@ -29,7 +29,7 @@ makeQQPlot <- function(foresty){
          x = "Teoretyczna",
          y = "Wilgotnosc",
          colour = "Miesiace")
-  ggsave("plotsImages/QQPlot-2.png")
+  ggsave("plotsImages/QQPlot-2.png", width = 9, height = 6, units = "in")
   
   qplot_wmp2 <- ggplot(foresty, aes(sample = log(area), group = month)) + 
     stat_qq() + stat_qq_line()+ 
@@ -39,7 +39,7 @@ makeQQPlot <- function(foresty){
          y = "Wilgotnosc",
          colour = "Miesiace")+
     facet_wrap(~month, scale="free_y")
-  ggsave("plotsImages/QQPlot-3.png")
+  ggsave("plotsImages/QQPlot-3.png", width = 9, height = 6, units = "in")
   ######################################  ######################################
   ######################################  ######################################
   
@@ -51,7 +51,7 @@ makeQQPlot <- function(foresty){
     labs(title = "Spalony obszar w skali logarytmicznej",
          x = "Teoretyczny",
          y = "Obszar(ha)")
-  ggsave("plotsImages/QQPlot-4.png")
+  ggsave("plotsImages/QQPlot-4.png", width = 9, height = 6, units = "in")
   
   
   #kolorowy
@@ -62,7 +62,7 @@ makeQQPlot <- function(foresty){
          x = "Teoretyczny",
          y = "Obszar(ha)",
          colour = "Miesiace")
-  ggsave("plotsImages/QQPlot-5.png")
+  ggsave("plotsImages/QQPlot-5.png", width = 9, height = 6, units = "in")
   
   
   qplot_ob2 <- ggplot(foresty, aes(sample = log(area), group = month)) + 
@@ -73,7 +73,7 @@ makeQQPlot <- function(foresty){
          y = "Obszar(ha)",
          colour = "Miesiace")+
     facet_wrap(~month, scale="free_y")
-  ggsave("plotsImages/QQPlot-6.png")
+  ggsave("plotsImages/QQPlot-6.png", width = 9, height = 6, units = "in")
   
   ######################################  ######################################
   ######################################  ######################################
