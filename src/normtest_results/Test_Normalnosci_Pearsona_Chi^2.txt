@@ -1,0 +1,66 @@
+
+	Pearson chi-square normality test
+
+data:  probka_x
+P = 10.533, p-value = 0.06146
+
+
+	Pearson chi-square normality test
+
+data:  probka_y
+P = 23.867, p-value = 0.0002303
+
+
+	Pearson chi-square normality test
+
+data:  probka_ffmc
+P = 57.467, p-value = 4.052e-11
+
+
+	Pearson chi-square normality test
+
+data:  probka_dmc
+P = 12.133, p-value = 0.03301
+
+
+	Pearson chi-square normality test
+
+data:  probka_dc
+P = 22.267, p-value = 0.0004659
+
+
+	Pearson chi-square normality test
+
+data:  probka_isi
+P = 22.8, p-value = 0.0003686
+
+
+	Pearson chi-square normality test
+
+data:  probka_temp
+P = 2, p-value = 0.8491
+
+
+	Pearson chi-square normality test
+
+data:  probka_rh
+P = 8.9333, p-value = 0.1118
+
+
+	Pearson chi-square normality test
+
+data:  probka_wind
+P = 4.1333, p-value = 0.5304
+
+
+	Pearson chi-square normality test
+
+data:  probka_rain
+P = 179.6, p-value < 2.2e-16
+
+
+	Pearson chi-square normality test
+
+data:  probka_area
+P = 76.667, p-value = 4.175e-15
+

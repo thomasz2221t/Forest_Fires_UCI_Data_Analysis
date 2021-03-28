@@ -5,4 +5,5 @@ installAllNeededPackages<- function(){
   install.packages("tidyverse")
   install.packages("corrplot")
   install.packages("plotrix")
+  install.packages("nortest")
 }

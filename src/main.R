@@ -45,5 +45,9 @@ makeScatterPlotMatrix2d(foresty)
 #Correlation plots 2D
 makeCorrelationPlots(foresty)
 
+###############Quantitative analysis###############
+#Normality tests
+normality_tests(foresty)
+
 
 

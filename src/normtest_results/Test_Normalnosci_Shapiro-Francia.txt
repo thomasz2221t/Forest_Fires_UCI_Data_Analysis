@@ -1,0 +1,66 @@
+
+	Shapiro-Francia normality test
+
+data:  probka_x
+W = 0.94722, p-value = 0.1275
+
+
+	Shapiro-Francia normality test
+
+data:  probka_y
+W = 0.90179, p-value = 0.01143
+
+
+	Shapiro-Francia normality test
+
+data:  probka_ffmc
+W = 0.56563, p-value = 2.877e-07
+
+
+	Shapiro-Francia normality test
+
+data:  probka_dmc
+W = 0.95682, p-value = 0.2205
+
+
+	Shapiro-Francia normality test
+
+data:  probka_dc
+W = 0.81885, p-value = 0.0003404
+
+
+	Shapiro-Francia normality test
+
+data:  probka_isi
+W = 0.53122, p-value = 1.381e-07
+
+
+	Shapiro-Francia normality test
+
+data:  probka_temp
+W = 0.98653, p-value = 0.9136
+
+
+	Shapiro-Francia normality test
+
+data:  probka_rh
+W = 0.90584, p-value = 0.01395
+
+
+	Shapiro-Francia normality test
+
+data:  probka_wind
+W = 0.95443, p-value = 0.1924
+
+
+	Shapiro-Francia normality test
+
+data:  probka_rain
+W = 0.17284, p-value = 3.222e-10
+
+
+	Shapiro-Francia normality test
+
+data:  probka_area
+W = 0.52954, p-value = 1.334e-07
+

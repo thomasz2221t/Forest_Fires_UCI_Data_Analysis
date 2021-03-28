@@ -1,0 +1,66 @@
+
+	Shapiro-Wilk normality test
+
+data:  probka_x
+W = 0.93101, p-value = 0.05223
+
+
+	Shapiro-Wilk normality test
+
+data:  probka_y
+W = 0.91121, p-value = 0.01596
+
+
+	Shapiro-Wilk normality test
+
+data:  probka_ffmc
+W = 0.57541, p-value = 3.705e-08
+
+
+	Shapiro-Wilk normality test
+
+data:  probka_dmc
+W = 0.94295, p-value = 0.1092
+
+
+	Shapiro-Wilk normality test
+
+data:  probka_dc
+W = 0.8145, p-value = 0.0001219
+
+
+	Shapiro-Wilk normality test
+
+data:  probka_isi
+W = 0.56099, p-value = 2.519e-08
+
+
+	Shapiro-Wilk normality test
+
+data:  probka_temp
+W = 0.98175, p-value = 0.87
+
+
+	Shapiro-Wilk normality test
+
+data:  probka_rh
+W = 0.89657, p-value = 0.00693
+
+
+	Shapiro-Wilk normality test
+
+data:  probka_wind
+W = 0.94471, p-value = 0.1219
+
+
+	Shapiro-Wilk normality test
+
+data:  probka_rain
+W = 0.19624, p-value = 1.038e-11
+
+
+	Shapiro-Wilk normality test
+
+data:  probka_area
+W = 0.54072, p-value = 1.484e-08
+
