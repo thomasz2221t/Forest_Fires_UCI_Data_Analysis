@@ -5,24 +5,23 @@
 library(ggplot2)
 library(bigstatsr)
 
-makeQQPlot <- function(data){
+makeQQPlot <- function(foresty){
   
   #miesiace jako nazwy
   foresty$month <- month.abb[foresty$month]
   
   
   ##wilgotnosc materialow palnych
-  png(filename= "plotsImages/QQPlot/QQPlot-1.png")
+  
   qplot_wmp <- ggplot(foresty, aes(sample = DMC)) + 
     stat_qq() + stat_qq_line()+ 
     theme_bigstatsr()+ 
     labs(title = "Wilgotnosc materialow palnych",
          x = "Teoretyczna",
          y = "Wilgotnosc")
-  dev.off()
+  ggsave("plotsImages/QQPlot-1.png")
   
   #kolorowy
-  png(filename= "plotsImages/QQPlot/QQPlot-2.png")
   qplot_wmp1 <- ggplot(foresty, aes(sample = DMC, color = month)) + 
     stat_qq() + stat_qq_line()+ 
     theme_bigstatsr()+
@@ -30,9 +29,8 @@ makeQQPlot <- function(data){
          x = "Teoretyczna",
          y = "Wilgotnosc",
          colour = "Miesiace")
-  dev.off()
+  ggsave("plotsImages/QQPlot-2.png")
   
-  png(filename= "plotsImages/QQPlot/QQPlot-3.png")
   qplot_wmp2 <- ggplot(foresty, aes(sample = log(area), group = month)) + 
     stat_qq() + stat_qq_line()+ 
     theme_bw()+ 
@@ -41,24 +39,22 @@ makeQQPlot <- function(data){
          y = "Wilgotnosc",
          colour = "Miesiace")+
     facet_wrap(~month, scale="free_y")
-  dev.off()
+  ggsave("plotsImages/QQPlot-3.png")
   ######################################  ######################################
   ######################################  ######################################
   
   
   ##obszar
-  png(filename= "plotsImages/QQPlot/QQPlot-4.png")
   qplot_ob <- ggplot(foresty, aes(sample = log(area))) + 
     stat_qq() + stat_qq_line()+ 
     theme_bigstatsr()+ 
     labs(title = "Spalony obszar w skali logarytmicznej",
          x = "Teoretyczny",
          y = "Obszar(ha)")
-  dev.off()
+  ggsave("plotsImages/QQPlot-4.png")
   
   
   #kolorowy
-  png(filename= "plotsImages/QQPlot/QQPlot-5.png")
   qplot_ob1 <- ggplot(foresty, aes(sample = log(area), color = month)) + 
     stat_qq() + stat_qq_line()+ 
     theme_bigstatsr()+ 
@@ -66,10 +62,9 @@ makeQQPlot <- function(data){
          x = "Teoretyczny",
          y = "Obszar(ha)",
          colour = "Miesiace")
-  dev.off()
+  ggsave("plotsImages/QQPlot-5.png")
   
   
-  png(filename= "plotsImages/QQPlot/QQPlot-6.png")
   qplot_ob2 <- ggplot(foresty, aes(sample = log(area), group = month)) + 
     stat_qq() + stat_qq_line()+ 
     theme_bw()+ 
@@ -77,9 +72,9 @@ makeQQPlot <- function(data){
          x = "Teoretyczny",
          y = "Obszar(ha)",
          colour = "Miesiace")+
-  facet_wrap(~month, scale="free_y")
-  dev.off()
-
+    facet_wrap(~month, scale="free_y")
+  ggsave("plotsImages/QQPlot-6.png")
+  
   ######################################  ######################################
   ######################################  ######################################
   
