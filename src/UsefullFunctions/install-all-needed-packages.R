@@ -6,4 +6,5 @@ installAllNeededPackages<- function(){
   install.packages("corrplot")
   install.packages("plotrix")
   install.packages("nortest")
+  install.packages("bigstatsr")
 }
