@@ -27,7 +27,7 @@ normality_tests<-function(foresty){
   #area
   probka_area <- sample(foresty$area, size = los, replace = FALSE, prob=NULL)
 
-    sink(file = "normtest results/Test_Normalnosci_Shapiro_Wilka.txt", append = FALSE)
+  sink(file = "normtest results/Test_Normalnosci_Shapiro_Wilka.txt", append = FALSE)
   shapiro.test(probka_x)
   shapiro.test(probka_y)
   shapiro.test(probka_ffmc)
