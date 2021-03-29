@@ -264,8 +264,7 @@ calculateAvgRain <-function(dane)
 }
 
 
-
-makeBarPlots <- function(foresty)
+  makeBarPlots <- function(foresty)
 {
   miesiace <- c("jan","feb","mar","apr","may","jun","jul", "aug","sep", "oct", "nov", "dec" )
   sredniaTemperatura <- calculateAvgTempetrature(foresty)
@@ -274,42 +273,27 @@ makeBarPlots <- function(foresty)
   sredniDeszcz <- calculateAvgRain(foresty)
   
   png(filename= "plotsImages/barPlot1D-1.png")
-  barplot( height =sredniaTemperatura, names = miesiace, ylim = c(0,30), main="Srednia temperatura w miesiacach",
+  barplot( height =sredniaTemperatura, names.arg = miesiace ,cex.names = .95, ylim = c(0,30), main="Srednia temperatura w miesiacach",
            xlab="miesiace",ylab = "temperatura [Celsius degrees]", col=c("darkblue","red"))
   dev.off()
   
   png(filename= "plotsImages/barPlot1D-2.png")
-  barplot( height = sredniWiatr,names = miesiace, ylim = c(0,11), main="Srednia wartosc wiatru w miesiacach",
+  barplot( height = sredniWiatr, names.arg = miesiace ,cex.names = .95, ylim = c(0,11), main="Srednia wartosc wiatru w miesiacach",
            xlab="miesiace",ylab = "wartosc wiatru [km/h]", col=c("darkblue","red"))
   dev.off()
   
   png(filename= "plotsImages/barPlot1D-3.png")
-  barplot( height = sredniObszar,names = miesiace, ylim = c(0,26), main="Sredni obszar pozaru w miesiacach",
+  barplot( height = sredniObszar,names.arg = miesiace ,cex.names = .95, ylim = c(0,26), main="Sredni obszar pozaru w miesiacach",
            xlab="miesiace",ylab = "obszar [ha]", col=c("darkblue","red"))
   dev.off()
   
   png(filename= "plotsImages/barPlot1D-4.png")
-  barplot( height =sredniDeszcz,names = miesiace, ylim = c(0,0.1), main="Srednie opady w miesiacach",
+  barplot( height =sredniDeszcz,names.arg = miesiace ,cex.names = .95, ylim = c(0,0.1), main="Srednie opady w miesiacach",
            xlab="miesiace",ylab = "opady [mm/m2] ", col=c("darkblue","red"))
   dev.off()
   
 }
+  
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
   
