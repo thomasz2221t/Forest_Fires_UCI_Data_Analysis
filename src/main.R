@@ -66,6 +66,9 @@ normality_tests(foresty)
 #QQPlot
 makeQQPlot(foresty)
 
+#Histograms
+makeHistograms(foresty)
+
 #################Correlation 2D####################
 correlationMatrixPlot(foresty)
 generatingCorTable(foresty)
