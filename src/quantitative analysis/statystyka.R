@@ -1,54 +1,75 @@
 library(moments)
+library(gridExtra)
 
 statistic <- function(foresty){ 
   
-  median(foresty$X)
-  median(foresty$Y)
-  median(foresty$month)
-  median(foresty$day)
-  median(foresty$FFMC)
-  median(foresty$DMC)
-  median(foresty$DC)
-  median(foresty$ISI)
-  median(foresty$temp)
-  median(foresty$RH)
-  median(foresty$wind)
-  median(foresty$rain)
-  median(foresty$area)
+median(data$month)
+median(data$day)
+
+mediana <- c(
+median(data$X),
+median(data$Y),
+median(data$FFMC),
+median(data$DMC),
+median(data$DC),
+median(data$ISI),
+median(data$temp),
+median(data$RH),
+median(data$wind),
+median(data$rain),
+median(data$area)
+)
   
-  mean(foresty$X)
-  mean(foresty$Y)
-  mean(foresty$FFMC)
-  mean(foresty$DMC)
-  mean(foresty$DC)
-  mean(foresty$ISI)
-  mean(foresty$temp)
-  mean(foresty$RH)
-  mean(foresty$wind)
-  mean(foresty$rain)
-  mean(foresty$area)
+srednia <- c(
+mean(data$X),
+mean(data$Y),
+mean(data$FFMC),
+mean(data$DMC),
+mean(data$DC),
+mean(data$ISI),
+mean(data$temp),
+mean(data$RH),
+mean(data$wind),
+mean(data$rain),
+mean(data$area)
+)
   
-  skewness(foresty$X)
-  skewness(foresty$Y)
-  skewness(foresty$FFMC)
-  skewness(foresty$DMC)
-  skewness(foresty$DC)
-  skewness(foresty$ISI)
-  skewness(foresty$temp)
-  skewness(foresty$RH)
-  skewness(foresty$wind)
-  skewness(foresty$rain)
-  skewness(foresty$area)
+skosnosc <- c(
+skewness(data$X),
+skewness(data$Y),
+skewness(data$FFMC),
+skewness(data$DMC),
+skewness(data$DC),
+skewness(data$ISI),
+skewness(data$temp),
+skewness(data$RH),
+skewness(data$wind),
+skewness(data$rain),
+skewness(data$area)
+)
+
+kurtoza <- c(
+kurtosis(data$X),
+kurtosis(data$Y),
+kurtosis(data$FFMC),
+kurtosis(data$DMC),
+kurtosis(data$DC),
+kurtosis(data$ISI),
+kurtosis(data$temp),
+kurtosis(data$RH),
+kurtosis(data$wind),
+kurtosis(data$rain),
+kurtosis(data$area)
+)
   
-  kurtosis(foresty$X)
-  kurtosis(foresty$Y)
-  kurtosis(foresty$FFMC)
-  kurtosis(foresty$DMC)
-  kurtosis(foresty$DC)
-  kurtosis(foresty$ISI)
-  kurtosis(foresty$temp)
-  kurtosis(foresty$RH)
-  kurtosis(foresty$wind)
-  kurtosis(foresty$rain)
-  kurtosis(foresty$area)
+Typ <- c("X","Y","FFMC","DMC","DC","ISI","temp","RH","wind","rain","area")
+Mediana <- mediana
+Srednia <- srednia
+Skosnosc <- skosnosc
+Kurtoza <- kurtoza
+tabela <- data.frame(Typ, Mediana, Srednia, Skosnosc, Kurtoza)
+ 
+png("statystykaOpisowa.png", height = 50nrow(tabela), width = 200ncol(tabela))
+grid.table(tabela)
+dev.off()
 }
