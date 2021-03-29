@@ -1,5 +1,5 @@
 #includes
-source("UsefullFunctions/install-all-needed-packages.R")
+source("UsefullFunctions/install-all-needed-packages.R") 
 source("UsefullFunctions/read-csv-and-recode.R")
 #1d
 source("1Dplots/density.R")
@@ -11,7 +11,12 @@ source("2Dplots/density-2d.R")
 source("2Dplots/scatterPlotMatrix-2d.R")
 source("2Dplots/boxAndWhisker-2d.R")
 source("2Dplots/correlation-2d.R")
+#Correlation
+source("CorrelationEclipse/Eclipse-CorrelationMatrix-2d.R")
+##TO DO - Table with Correlations
 
+#Use this function only if you need to install this packages
+#If you installed don't use it again, R Studio will crash
 installAllNeededPackages()
 
 #Load Data
@@ -51,6 +56,8 @@ normality_tests(foresty)
 
 #QQPlot
 makeQQPlot(foresty)
+
+#################Correlation 2D####################
 
 
 
