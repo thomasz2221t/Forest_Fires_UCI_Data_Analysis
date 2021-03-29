@@ -11,9 +11,13 @@ source("2Dplots/density-2d.R")
 source("2Dplots/scatterPlotMatrix-2d.R")
 source("2Dplots/boxAndWhisker-2d.R")
 source("2Dplots/correlation-2d.R")
+#Q-Q plots
+
+#Normality Tests
+
 #Correlation
 source("CorrelationEclipse/Eclipse-CorrelationMatrix-2d.R")
-##TO DO - Table with Correlations
+source("CorrelationEclipse/generatingCorTable.R")
 
 #Use this function only if you need to install this packages
 #If you installed don't use it again, R Studio will crash
@@ -58,6 +62,7 @@ normality_tests(foresty)
 makeQQPlot(foresty)
 
 #################Correlation 2D####################
-
+correlationMatrixPlot(foresty)
+generatingCorTable(foresty)
 
 
