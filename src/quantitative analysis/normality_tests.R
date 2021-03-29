@@ -27,7 +27,7 @@ normality_tests<-function(foresty){
   #area
   probka_area <- sample(foresty$area, size = los, replace = FALSE, prob=NULL)
 
-  sink(file = "normtest_results/Test_Normalnosci_Shapiro_Wilka.txt", append = FALSE)
+    sink(file = "normtest results/Test_Normalnosci_Shapiro_Wilka.txt", append = FALSE)
   shapiro.test(probka_x)
   shapiro.test(probka_y)
   shapiro.test(probka_ffmc)
@@ -41,7 +41,7 @@ normality_tests<-function(foresty){
   shapiro.test(probka_area)
   sink()
 
-  sink(file = "normtest_results/Test_Normalnosci_Pearsona_Chi^2.txt", append = FALSE)
+  sink(file = "normtest results/Test_Normalnosci_Pearsona_Chi^2.txt", append = FALSE)
   pearson.test(probka_x,  adjust = TRUE)
   pearson.test(probka_y,  adjust = TRUE)
   pearson.test(probka_ffmc, adjust = TRUE)
@@ -55,7 +55,7 @@ normality_tests<-function(foresty){
   pearson.test(probka_area,  adjust = TRUE)
   sink()
 
-  sink(file = "normtest_results/Test_Normalnosci_Shapiro-Francia.txt", append = FALSE)
+  sink(file = "normtest results/Test_Normalnosci_Shapiro-Francia.txt", append = FALSE)
   sf.test(probka_x)
   sf.test(probka_y)
   sf.test(probka_ffmc)
