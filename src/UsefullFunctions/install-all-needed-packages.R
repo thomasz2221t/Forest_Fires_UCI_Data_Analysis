@@ -7,4 +7,5 @@ installAllNeededPackages<- function(){
   install.packages("plotrix")
   install.packages("nortest")
   install.packages("bigstatsr")
+  install.packages("gridExtra")
 }
