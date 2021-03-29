@@ -291,7 +291,7 @@ makeBarPlots <- function(foresty)
   png(filename= "plotsImages/barPlot1D-4.png")
   barplot( height =sredniDeszcz,names = miesiace, ylim = c(0,0.1), main="Srednie opady w miesiacach",
            xlab="miesiace",ylab = "opady [mm/m2] ", col=c("darkblue","red"))
-  #dev.off()
+  dev.off()
   
 }
 
