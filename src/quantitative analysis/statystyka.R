@@ -69,7 +69,7 @@ Skosnosc <- skosnosc
 Kurtoza <- kurtoza
 tabela <- data.frame(Typ, Mediana, Srednia, Skosnosc, Kurtoza)
  
-png("statystykaOpisowa.png", height = 50*nrow(tabela), width = 200*ncol(tabela))
+png("plotsImages/statystykaOpisowa.png", height = 50*nrow(tabela), width = 200*ncol(tabela))
 grid.table(tabela)
 dev.off()
 }
