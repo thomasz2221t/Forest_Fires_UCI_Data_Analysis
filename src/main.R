@@ -12,14 +12,14 @@ source("2Dplots/scatterPlotMatrix-2d.R")
 source("2Dplots/boxAndWhisker-2d.R")
 source("2Dplots/correlation-2d.R")
 #Q-Q plots
-source("visualization\ of\ normality/QQPlot.R")
+source("visualization of normality/QQPlot.R")
 #Histogram
-source("visualization\ of\ normality/histograms.R")
+source("visualization of normality/histograms.R")
 
 #Normality Tests
-source("quantitative\ analysis/normality_test.R")
+source("quantitative analysis/normality_tests.R")
 #Statistic 
-source("quantitative\ analysis/statystyka.R")
+source("quantitative analysis/statystyka.R")
 #Correlation
 source("CorrelationEclipse/Eclipse-CorrelationMatrix-2d.R")
 source("CorrelationEclipse/generatingCorTable.R")
