@@ -49,5 +49,8 @@ makeCorrelationPlots(foresty)
 #Normality tests
 normality_tests(foresty)
 
+#QQPlot
+makeQQPlot(foresty)
+
 
 
