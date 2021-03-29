@@ -7,7 +7,7 @@ generatingCorTable <- function(forestyRecoded){ #wymagana wersja recoded
   ####################
   
   tabela <- data.frame(round(data, 3))
-  png("plotsImages/corTable.png", height = 50nrow(tabela), width = 200ncol(tabela))
+  png("plotsImages/corTable.png", height = 50*nrow(tabela), width = 200*ncol(tabela))
   grid.table(tabela)
   dev.off()
   
