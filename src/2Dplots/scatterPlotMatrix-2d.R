@@ -25,6 +25,6 @@ png(filename= "plotsImages/scatterPlotMatrix2D-4.png")
 pairs(~rain+temp+wind, data=foresty,
       labels=c("Deszcz", "Temperatura","Wiatr"),
       main="Wykres scatterplot matrix zestawienie: Pogodowe", panel=panel.smooth, col=my_cols)
-#dev.off()
+dev.off()
     
 }
