@@ -68,5 +68,6 @@ makeCorrelationPlots<-function(foresty)
   png(filename= "plotsImages/CorrelationPlot2D-5.png")
   corrplot(korelacja6, method = c("number"), type = "upper", add = FALSE, col = c ("darkorange","seagreen"), 
            bg = "ivory", title = "Macierz korelacji temperatury i obszaru", is.corr = FALSE, order = "original")
+  dev.off()
   
 }
