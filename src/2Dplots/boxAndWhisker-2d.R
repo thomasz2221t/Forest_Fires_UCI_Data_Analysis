@@ -65,6 +65,6 @@ boxplot(param_ffmc ~ temp_wilgoc_deszcz, data= foresty, xlab = "Parametr FFMC - 
         rozprzestrzenianie sie ognia  dla parametru DMC wplywajacego na gestosc ognia", 
         horizontal=TRUE,col="bisque1",
         border = "gray1")
-#dev.off()
+dev.off()
 
 }
