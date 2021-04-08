@@ -84,5 +84,5 @@ boxAndWhisker <- function(foresty){
   boxplot(temperatura, wiatr, data= foresty, xlab = "Temperatura w stopniach Celcjusza", ylab = "Szybkosc wiatru [km/h]",
           main = "Wykres rozrzutu temperatury i szybkosci wiatru", horizontal=TRUE,col="darkolivegreen1",
           border = "black")
- # dev.off()
+  dev.off()
 }
